@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex: 1 1 100vw;
+    background-color: #00597d;
+    height: 14vh;
+}
+
+@font-face {
+    font-family: KGPrimaryItalics;
+    src: url(/assets/fonts/KGPrimaryItalics.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.titulo{
+    font-family: KGPrimaryItalics;
+    color: white;
+    font-size: 300%;
+    text-indent: 20vw;
+}
+
+.logo{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 100vw;
+    background: #03305a;
+    height: 9vh;
+    justify-content: space-around;
+}
+
+button{
+    cursor: pointer;
+    margin: 10px;
+    
+}
+
+button:hover{
+    color:red
+}
+
+.principais{
+    background-color: Transparent;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30;
+}
+
+.secundarias{
+    border-radius: 30px;
+    height: vh;
+    background-color: #00597d;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    font-size: 30;
+    
+}
+
+main{
+    display: flex;
+    align-items: center;
+    margin: 2px ;
+    flex: 1 1 100vw;
+    background: #00597d;
+    height: calc(100vh - 23vh);
+    position: relative;
+}
+
+.tabela{
+    display: block;
+    margin: auto;
+}
+
+#tabela-auditiva{
+    color: white;
+    position: absolute;
+    bottom: 85%;
+    right: 42%;
+}
+
