@@ -33,22 +33,44 @@ header{
 }
 
 nav{
-    display: flex;
-    flex-direction: row;
-    flex: 1 1 100vw;
     background: #03305a;
-    height: 9vh;
     justify-content: space-around;
 }
 
-button{
-    cursor: pointer;
-    margin: 10px;
+nav li{
+    display: inline-block;
+}
+
+nav ul{
+    text-align: center;
+}
+
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
     
 }
 
-button:hover{
-    color:red
+nav li a:hover{
+    background-color: red;
+}
+
+.dropdown-menu{
+    position: absolute;
+    
+}
+
+.dropdown-menu a{
+    display: block;
+    box-shadow: 0 0 2px black;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
 }
 
 .principais{
@@ -77,4 +99,8 @@ main{
 
 .quemsomos-apresentacao{
     margin: 20%;
+}
+
+video{
+    height: 30%;
 }

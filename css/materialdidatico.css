@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+header{
+    display: flex;
+    align-items: center;
+    flex: 1 1 100vw;
+    background-color: #00597d;
+    height: 14vh;
+}
+
+@font-face {
+    font-family: KGPrimaryItalics;
+    src: url(/assets/fonts/KGPrimaryItalics.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.titulo{
+    font-family: KGPrimaryItalics;
+    color: white;
+    font-size: 300%;
+    text-indent: 20vw;
+}
+
+.logo{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav{
+    background: #03305a;
+    justify-content: space-around;
+}
+
+nav li{
+    display: inline-block;
+}
+
+nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display: inline-block;
+    
+}
+
+nav ul{
+    text-align: center;
+}
+
+
+nav li a:hover{
+    background-color: red;
+}
+
+.dropdown-menu{
+    position: absolute;
+    
+}
+
+.dropdown-menu a{
+    display: block;
+    box-shadow: 0 0 2px black;
+    display: none;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    margin: 2px ;
+    flex: 1 1 100vw;
+    background: #00597d;
+    height: calc(100vh - 23vh);
+    position: relative;
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 14;
+}
+
+

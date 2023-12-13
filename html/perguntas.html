@@ -13,28 +13,57 @@
             <h1 class="titulo">Química para todos</h1>
         </header>
 
-       <nav>
-            <a href="index.html">
-            <button class="principais">
-                &#127968;
-            </button>
-            </a>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="quemsomos.html">Quem Somos</a>
 
-            <a href="quemsomos.html">
-                <button class="principais">
-                Quem Somos;
-            </button>
-            </a>
-            <button class="principais">
-                Material Didático
-            </button>
-            <button class="principais">
-                Tabela
-            </button>
+                    <div class="dropdown-menu">
+                        <a href="">Apresentação</a>
+                        <a href="">Contate-nos</a>
+                    </div>
+                </li>
 
-            <button class="secundarias">Perguntas Frequentes</button>
-            <button class="secundarias">&#128080</button>
-            <button class="secundarias">AUDIODESCRIÇÃO</button>
+                <li>
+                    <a href="materialdidatico.html">Material Didático</a>
+
+                    <div class="dropdown-menu">
+                        <a href="">Banco de questões</a>
+                        <a href="">Apostilas</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html">Tabela</a>
+                </li>
+
+                <li>
+                    <a href="perguntas.html">Perguntas Frequentes</a>
+                </li>
+
+                <li>
+                    <button class="video">👐</button>
+                    <script>
+                        const butto = document.querySelector('.video')
+                        butto.addEventListener('click', function (){
+                            const video = document.querySelector('video')
+                            video.play()
+                        })
+                    </script>
+                </li>
+
+                <li>
+                    <button class="audio">AUDIODESCRIÇÃO</button>
+                    <audio src="/assets/audio/Perguntas Frequentes.m4a"></audio>
+                    <script>
+                        const button = document.querySelector('.audio')
+                        button.addEventListener('click', function(){
+                            const audio = document.querySelector('audio')
+                            audio.play()
+                        })
+                    </script>
+                </li>
+
+            </ul>
        </nav>
        
        <main>
@@ -52,6 +81,8 @@
             <p class = "paragrafo"> 
                 Até o momento, o site é capz de atender demandas audiovisuaisgerais, sendo acessível tanto para deficientes visuais quanto auditivos.
             </p>
+
+            <video src="/assets/video/perguntas.mp4"></video>
         </main>
     </div>
 </body>

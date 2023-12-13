@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="/css/quemsomos.css">
+    <script src="/javascript/quemsomos.js"></script>
 </head>
 <body>
     <div class = 'tela'>
@@ -13,27 +14,58 @@
             <h1 class="titulo">Química para todos</h1>
         </header>
 
-       <nav>
-            <button class="principais">
-                &#127968;
-            </button>
-            <a href="quemsomos.html">
-                <button class="principais">
-                Quem Somos;
-            </button>
-            </a>
-            <button class="principais">
-                Material Didático
-            </button>
-            <button class="principais">
-                Tabela
-            </button>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="quemsomos.html">Quem Somos</a>
 
-            <a href="perguntas.html">
-                <button class="secundarias">Perguntas Frequentes</button>
-            </a>
-            <button class="secundarias">&#128080</button>
-            <button class="secundarias">AUDIODESCRIÇÃO</button>
+                    <div class="dropdown-menu">
+                        <a href="">Apresentação</a>
+                        <a href="">Contate-nos</a>
+                    </div>
+                </li>
+
+                <li>
+                    <a href="materialdidatico.html">Material Didático</a>
+
+                    <div class="dropdown-menu">
+                        <a href="">Banco de questões</a>
+                        <a href="">Apostilas</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html">Tabela</a>
+                </li>
+
+                <li>
+                    <a href="perguntas.html">Perguntas Frequentes</a>
+                </li>
+
+                <li>
+                    <button class="video">👐</button>
+                    <script>
+                        const butto = document.querySelector('.video')
+                        butto.addEventListener('click', function (){
+                            const video = document.querySelector('video')
+                            video.play()
+                        })
+                    </script>
+                </li>
+
+                <li>
+                    
+                    <button class="audio">AUDIODESCRIÇÃO</button>
+                    <audio src="/assets/audio/Apresentação No noss.m4a"></audio>
+                    <script>
+                        const button = document.querySelector('.audio')
+                        button.addEventListener('click', function(){
+                            const audio = document.querySelector('audio')
+                            audio.play()
+                        })
+                    </script>
+                </li>
+
+            </ul>
        </nav>
        
        <main>
@@ -43,6 +75,8 @@
                 que dedicamos nossos esforços para criar um ambiente educacional que seja acessível não apenas para aqueles que podem ver e ouvir, mas 
                 também para aqueles que têm diferentes necessidades e habilidades.
             </p>
+
+            <video src="/assets/video/apresentação.mp4"></video>
         </main>
     </div>
 </body>

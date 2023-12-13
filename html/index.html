@@ -14,31 +14,49 @@
         </header>
 
        <nav>
-            <a href="index.html">
-                <button class="principais">
-                    &#127968;
-                </button>
-            </a>
+            <ul>
+                <li class="dropdown">
+                    <a href="quemsomos.html">Quem Somos</a>
 
-            </button>
-            <a href="quemsomos.html">
-                <button class="principais">
-                Quem Somos;
-            </button>
+                    <div class="dropdown-menu">
+                        <a href="">Apresentação</a>
+                        <a href="">Contate-nos</a>
+                    </div>
+                </li>
 
-            <button class="principais">
-                Material Didático
-            </button>
+                <li>
+                    <a href="materialdidatico.html">Material Didático</a>
 
-            <button class="principais">
-                Tabela
-            </button>
+                    <div class="dropdown-menu">
+                        <a href="">Banco de questões</a>
+                        <a href="">Apostilas</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="index.html">Tabela</a>
+                </li>
 
-            <a href="perguntas.html">
-                <button class="secundarias">Perguntas Frequentes</button>
-            </a>
-            <button class="secundarias">&#128080</button>
-            <button class="secundarias">AUDIODESCRIÇÃO</button>
+                <li>
+                    <a href="perguntas.html">Perguntas Frequentes</a>
+                </li>
+
+                <li>
+                    <a href="">👐</a>
+                </li>
+
+                <li>
+                    <button class="audio">AUDIODESCRIÇÃO</button>
+                    <audio src="/assets/audio/TABELA PERIÓDICA.m4a"></audio>
+                    <script>
+                        const button = document.querySelector('.audio')
+                        button.addEventListener('click', function(){
+                            const audio = document.querySelector('audio')
+                            audio.play()
+                        })
+                    </script>
+                </li>
+
+            </ul>
        </nav>
        
        <main>
